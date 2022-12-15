@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Integer Triangle Finder</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <h3>Integer Triangle Finder With One Known Side</h3>
+    <h4>— Unique Scalene Triangle Triplets (60° and 120°)</h4>
+    <form id="side-info" name="side-info">
+        <label for="angle">Angle</label><br>
+        <select id="angle" name="angle">
+            <option value="60">60°</option>
+            <option value="120">120°</option>
+        </select><br>
+
+        <label for="side-length">Side Length Value</label><br>
+        <input type="number" min="1" id="side-length" name="side-length" placeholder="7" required><br>
+
+        <br>
+        <input type="submit" value="Find!">
+    </form>
+    <h5 id="triplets" name="triplets" />
+</body>
+</html>
